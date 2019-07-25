@@ -1,0 +1,14 @@
+﻿body {
+    background-image: url(/assets/black_board.jpg);
+    background-repeat: repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.userCardTitle {
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    align-content: center;
+}
+
+

@@ -1,0 +1,85 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ahorcado de refraneo</title>
+    <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.11/lodash.min.js"></script>
+    <script id="hangmanJS"></script>
+    <link href="css/hangman.css" rel="stylesheet" />
+    <script>
+        //relaod the scripts
+        function loadHangMan() {
+            var src = `js/hangman.js?dummy=${Math.random()}`;
+            document.getElementById("hangmanJS").src = src;
+        }
+    </script>
+</head>
+<body onload="loadHangMan()">
+    <div style="height: 15px"></div>
+    <div class="row">
+        <div class="col-2"></div>
+        <div class="col-8">
+            <div class="card text-center card-sm">
+                <div class="card-header">
+                    <h3>¿Eres sabi@ en refraneo castizo?</h3>
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-2"></div>
+                        <div class="col-md-5">
+                            <span class="card-title">Pista </span>
+                            <div style="height: 15px"></div>
+                            <div id="currentGameId" style="display:block;">
+                                <div id="clue"></div>
+                                <div style="height: 15px"></div>
+                                <input id="letter" type="text" placeholder="Dame una letra" maxlength="1">
+                                <button id="button_check" class="p-1 mb-2 bg-info text-white">Comprobar</button>
+                            </div>
+                            <div id="newGameId" style="display:none;">
+                                <button onclick="startGame();" class="p-1 mb-2 bg-info text-white"> NUEVO JUEGO</button>
+                            </div>
+                        </div>
+                        <div class="col-md-5">
+                            <dl class="row">
+                                <dt class="col-md-6">Usuario:</dt>
+                                <dd class="col-md-6" id="userId"></dd>
+                                <dt class="col-md-6">Dificultad:</dt>
+                                <dd class="col-md-6" id="dificultyId"></dd>
+                                <!--
+                                <dt class="col-md-6">Media partidas:</dt>
+                                <dd class="col-md-6" id="gamesAverageIdNode"></dd>
+                                    -->
+                            </dl>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-img-top">
+                    <img id="hangManImg" src="assets/hang_hang_toy.jpg" width="400" />
+                </div>
+                <div class="card-footer">
+                    <div class="row" style="align-items:center">
+                        <div class="col-3">
+                            <h2>Intentos restantes</h2>
+                            <div id="tries"></div>
+                        </div>
+                        <div class="col-6"><div id="result"></div></div>
+                        <div class="col-3">
+                            <h2>Letras ya usadas</h2>
+                            <div id="historic"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-2"></div>
+    </div>
+    <div style="height: 15px"></div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>

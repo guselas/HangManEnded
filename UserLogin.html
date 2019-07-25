@@ -1,0 +1,65 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <link href="css/userLogin.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <meta charset="utf-8" />
+    <script src="js/userLogin.js"></script>
+    <title>User Login</title>
+
+</head>
+<body>
+
+    <div class="row">
+        <div class="col-4"></div>
+        <div class="col-4">
+            <div style="height: 20px"></div>
+            <!-- Zona de usuario-->
+
+            <div class="card">
+                <form method="get" action="index.html">
+                    <h3 id="userCardTitle" class="card-title" style="text-align:center">Bienvenido al ahorcado del refraneo castizo</h3>
+                    <img id="userLoginImg" src="assets/ahorcadoForUser.jpg" class="card-img-top" width="150" height="350">
+                    <div class="card-body-sm">
+
+                        <div class="form-row align-items-center">
+                            <div class="col-auto">
+                                <label class="sr-only" for="inlineFormInput">Name</label>
+                                <input type="text" class="form-control mb-2" name="user" placeholder="Tu alias de refraneo" />
+                            </div>
+                            <div class="col-auto">
+                                <label class="sr-only" for="inlineFormInputGroup">Username</label>
+                            </div>
+                            <div class="col-auto">
+                                <div class="form-check mb-2">
+                                </div>
+                            </div>
+                            <div class="col-auto">
+                                <input type="submit" class="btn btn-primary mb-2" style="vertical-align:bottom" value="Jugar" />
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="card-footer">
+                        <div class="form-group">
+                            <h3 style="text-align:center">Escoge el nivel de dificultad</h3>
+                            <select name="level" class="form-control" value="easy">
+                                <option value="0">Facil</option>
+                                <option value="1">Intermedio</option>
+                                <option value="2">Nivel abuelesco</option>
+
+                            </select>
+
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="col-4"></div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>

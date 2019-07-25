@@ -1,0 +1,25 @@
+body {
+    background-image: url(/assets/green_board.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.card-title {
+    font-weight: bold;
+}
+
+.card-header {
+    background-color: #72797a;
+}
+
+.card-body {
+    background-color: #b6baba;
+}
+
+-card-img-top {
+    background-color: #b6baba;
+}
+.card-footer {
+    background-color: #b6baba;
+}
